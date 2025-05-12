@@ -1,0 +1,55 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Databases
+*.db
+
+# Node modules & build output
+node_modules/
+dist/
+dist-ssr/
+build/
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+
+# OS files
+.DS_Store
+
+# Miscellaneous
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment Configs (✅ Secure)
+.env
+.env.*
+*.local
+!.env.example
+
+# Python cache, environments & packaging
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+.cache/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+
+# Data files
+daily_trends*.json
+enhanced_trends_example.json
+data/

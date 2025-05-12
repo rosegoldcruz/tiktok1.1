@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0",
+  "environment": "development",
+  "scraper": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "output": {
+      "format": "pdf",
+      "quality": "high",
+      "directory": "./downloads"
+    },
+    "timeout": 30000,
+    "retries": 3,
+    "retryDelay": 1000
+  },
+  "api": {
+    "port": 3000,
+    "maxRequestSize": "50mb",
+    "rateLimit": {
+      "tiers": {
+        "free": {
+          "requestsPerMinute": 30,
+          "requestsPerDay": 1000
+        },
+        "pro": {
+          "requestsPerMinute": 100,
+          "requestsPerDay": 5000
+        },
+        "enterprise": {
+          "requestsPerMinute": 500,
+          "requestsPerDay": "unlimited"
+        }
+      }
+    },
+    "features": {
+      "tiers": {
+        "free": {
+          "concurrentRequests": 2,
+          "priorityQueue": false,
+          "customHeaders": false
+        },
+        "pro": {
+          "concurrentRequests": 10,
+          "priorityQueue": true,
+          "customHeaders": true
+        },
+        "enterprise": {
+          "concurrentRequests": 50,
+          "priorityQueue": true,
+          "customHeaders": true
+        }
+      }
+    }
+  },
+  "monetization": {
+    "plans": {
+      "free": {
+        "price": 0,
+        "features": [
+          "Basic PDF scraping",
+          "1000 requests per day",
+          "Standard support"
+        ]
+      },
+      "pro": {
+        "price": 99,
+        "features": [
+          "Advanced PDF scraping",
+          "5000 requests per day",
+          "Priority support",
+          "Custom headers"
+        ]
+      },
+      "enterprise": {
+        "price": 499,
+        "features": [
+          "Unlimited requests",
+          "Dedicated support",
+          "Custom integration",
+          "SLA guarantee"
+        ]
+      }
+    }
+  },
+  "monitoring": {
+    "enabled": true,
+    "logLevel": "info",
+    "metrics": {
+      "enabled": true,
+      "interval": 60000
+    }
+  }
+}

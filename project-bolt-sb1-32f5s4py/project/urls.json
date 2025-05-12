@@ -1,0 +1,17 @@
+{
+  "urls": [
+    "https://www.tiktok.com/help/article/sharing-on-tiktok",
+    "https://www.tiktok.com/help/article/privacy-settings",
+    "https://www.tiktok.com/help/article/account-setup",
+    {
+      "url": "https://www.tiktok.com/help/article/video-upload-guide",
+      "outputName": "tiktok-video-guide.pdf"
+    },
+    {
+      "url": "https://www.tiktok.com/help/article/community-guidelines",
+      "outputName": "tiktok-community-guidelines.pdf"
+    }
+  ],
+  "outputDir": "pdfs",
+  "maxRetries": 3
+}
